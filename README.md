@@ -23,7 +23,7 @@ conda env create -f environment.yml
 ```
 
 # Instructions
-We provide detailed step-by-step instructions for running DFHiC model for reproducing the results in the original paper.
+We provide detailed step-by-step instructions for running DFHiC model for reproducing the results in the original paper and processed train data and test data be provided [here](https://drive.google.com/drive/folders/12EQWb1OEsA16wRmXv_cxPLv1FIkEyAGh).
 ##  Download raw aligned sequencing reads
 
 We download alighed sequencing reads([GSE62525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)) from Rao *et al*. 2014 (e.g. ```GSM1551550_HIC001_merged_nodups.txt.gz``` ), and you can donwlaod data using the `raw_data_download_script.sh` script. You will download data to folder.
