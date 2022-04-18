@@ -64,4 +64,4 @@ python run_predict.py -1 22
 ```
 
 # License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSEfile for details
