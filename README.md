@@ -26,7 +26,7 @@ conda env create -f environment.yml
 We provide detailed step-by-step instructions for running DFHiC model for reproducing the results in the original paper and processed train data and test data be provided [here](https://drive.google.com/drive/folders/12EQWb1OEsA16wRmXv_cxPLv1FIkEyAGh).
 ##  Download raw aligned sequencing reads
 
-We download alighed sequencing reads([GSE62525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)) from Rao *et al*. 2014 (e.g. ```GSM1551550_HIC001_merged_nodups.txt.gz``` ), and you can donwlaod data using the `raw_data_download_script.sh` script. You will download data to folder.
+We download alighed sequencing reads([GSE62525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)) from Rao *et al*. 2014 (e.g. ```GSM1551550_HIC001_merged_nodups.txt.gz``` ), and you can donwlaod data using the `raw_data_download_script.sh` script. You will download data to `CELL` folder, such as `GM12878`.
 ```shell
 bash raw_data_download_script.sh GM12878 
 ```
@@ -37,7 +37,7 @@ We preprocess Hi-C data from alighed sequencing reads using `preprocess.sh` and 
 ```shell
 bash preprocess.sh GM12878 10000 juicer_tools.jar 
 ```
-Data for training and evaluating the model can be obtained by directly runing `generate_train_data.py`, and the resulting training and test sets are saved in this folder. We provide training files in [here](https://drive.google.com/drive/folders/12EQWb1OEsA16wRmXv_cxPLv1FIkEyAGh).
+Data for training and evaluating the model can be obtained by directly runing `generate_train_data.py`, and the resulting training and test sets are saved in `preprocess/data/CELL` folder. We provide training files in [here](https://drive.google.com/drive/folders/12EQWb1OEsA16wRmXv_cxPLv1FIkEyAGh).
 ```shell
 python generate_train_data.py GM12878 16
 ```
